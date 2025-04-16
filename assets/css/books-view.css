@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    background: #FEF3E8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    width: 1140px;
+    height: 740px;
+    position: relative;
+    background: #FEF3E8;
+    overflow: hidden;
+    border-radius: 12px;
+    outline: 1px #E8E8E8 solid;
+    outline-offset: -0.5px;
+}
+
+.books-table {
+    width: 1087px;
+    height: 558px;
+    left: 26px;
+    top: 25px;
+    position: absolute;
+    background: white;
+    overflow: hidden;
+    border-radius: 12px;
+    outline: 1px #E8E8E8 solid;
+    outline-offset: -1px;
+}
+
+.table-header-divider {
+    width: 1029px;
+    height: 0px;
+    left: 29px;
+    top: 58px;
+    position: absolute;
+    outline: 1px #E8E8E8 solid;
+    outline-offset: -0.50px;
+}
+
+.header-text {
+    color: #B07154;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 22.40px;
+    word-wrap: break-word;
+    position: absolute;
+    top: 24px;
+}
+
+.header-language {
+    left: 910px;
+}
+
+.header-bookid {
+    left: 85px;
+}
+
+.header-name {
+    left: 355px;
+}
+
+.header-type {
+    left: 645px;
+}
+
+.book-row {
+    width: 1034px;
+    height: 68px;
+    left: 24px;
+    position: absolute;
+}
+
+.row-1 {
+    top: 58px;
+}
+
+.row-2 {
+    top: 126px;
+}
+
+.row-3 {
+    top: 194px;
+}
+
+.row-4 {
+    top: 262px;
+}
+
+.row-5 {
+    top: 330px;
+}
+
+.row-6 {
+    top: 398px;
+}
+
+.row-7 {
+    top: 466px;
+}
+
+.row-8 {
+    top: 534px;
+}
+
+.book-text {
+    color: #B07154;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
+    position: absolute;
+    top: 23px;
+}
+
+.book-id {
+    left: 91px;
+}
+
+.book-name {
+    left: 288px;
+}
+
+.book-title {
+    left: 288px;
+    color: #B07154;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
+    position: absolute;
+    top: 23px;
+}
+
+.book-language {
+    left: 897px;
+}
+
+.book-type {
+    left: 595px;
+}
+
+.book-summary {
+    width: 408px;
+    height: 115px;
+    left: 26px;
+    top: 600px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 12px;
+    outline: 1px #E8E8E8 solid;
+    outline-offset: -1px;
+}
+
+.total-books-text {
+    left: 258px;
+    top: 21px;
+    position: absolute;
+    color: #B07154;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+.book-count {
+    left: 37px;
+    top: 63px;
+    position: absolute;
+    color: #B07154;
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 42px;
+    word-wrap: break-word;
+}
+
+.due-date {
+    left: 237px;
+    top: 68px;
+    position: absolute;
+    color: #B07154;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+.total-books-label {
+    left: 122px;
+    top: 21px;
+    position: absolute;
+    color: #B07154;
+    font-size: 19px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 26.60px;
+    word-wrap: break-word;
+}
+
+.id-label {
+    left: 34px;
+    top: 14px;
+    position: absolute;
+    color: #B07154;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 35px;
+    word-wrap: break-word;
+}
+
+.due-date-label {
+    left: 122px;
+    top: 68px;
+    position: absolute;
+    color: #B07154;
+    font-size: 19px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 26.60px;
+    word-wrap: break-word;
+}
+
+.vertical-divider {
+    width: 100px;
+    height: 0px;
+    left: 103px;
+    top: 108px;
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    outline: 1.50px #B07154 solid;
+    outline-offset: -0.75px;
+}
+
+.close-button {
+    width: 259px;
+    height: 54px;
+    left: 824px;
+    top: 636px;
+    position: absolute;
+    background: #B07154;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-text {
+    color: white;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 22.40px;
+    word-wrap: break-word;
+}

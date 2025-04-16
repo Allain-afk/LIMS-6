@@ -1,0 +1,379 @@
+*
+.branch-management-container {
+    padding: 20px;
+    background: #FEF3E8;
+}
+
+.controls-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.page-title {
+    color: #B07154;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.controls-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px 15px;
+    border: 2px solid #B07154;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.add-branch-btn {
+    padding: 10px 20px;
+    background: #B07154;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.add-branch-btn:hover {
+    background: #8B5B43;
+}
+
+/* Table Styles */
+.branches-table {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.branches-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.branches-table th {
+    background: #F4DECB;
+    color: #B07154;
+    font-weight: 600;
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.branches-table td {
+    padding: 15px;
+    border-bottom: 1px solid #F4DECB;
+    color: #495057;
+    font-size: 14px;
+}
+
+.branches-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Branch Elements */
+.branch-name {
+    font-weight: 600;
+    color: #B07154;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-active {
+    background: #DEF7EC;
+    color: #03543F;
+}
+
+.status-inactive {
+    background: #FEF3C7;
+    color: #92400E;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.action-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-btn {
+    background: #F4DECB;
+    color: #B07154;
+}
+
+.edit-btn:hover {
+    background: #E4C4A9;
+}
+
+.delete-btn {
+    background: #FFE5E5;
+    color: #FF4D4D;
+}
+
+.delete-btn:hover {
+    background: #FFD1D1;
+}
+
+/* Mobile Cards */
+.mobile-card {
+    display: none;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.mobile-card-info {
+    flex: 1;
+}
+
+.mobile-card-stats {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.stat-item {
+    background: #F4DECB;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #B07154;
+}
+
+.mobile-card-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Forms */
+.add-branch-form {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    color: #B07154;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #F4DECB;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Alerts and Notifications */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.alert-success {
+    background-color: #DEF7EC;
+    color: #03543F;
+    border: 1px solid #03543F;
+}
+
+.alert-danger {
+    background-color: #FEE2E2;
+    color: #B91C1C;
+    border: 1px solid #B91C1C;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1100;
+    transform: translateX(120%);
+    transition: transform 0.4s ease-out;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification-success {
+    background-color: #4CAF50;
+    border-left: 5px solid #2E7D32;
+}
+
+.notification-error {
+    background-color: #f44336;
+    border-left: 5px solid #B71C1C;
+}
+
+.notification-text {
+    flex-grow: 1;
+}
+
+.notification-close {
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .controls-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .controls-container {
+        flex-direction: column;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .branches-table {
+        display: none;
+    }
+
+    .mobile-card {
+        display: block;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .branch-management-container {
+        padding: 15px;
+    }
+
+    .mobile-card {
+        padding: 12px;
+    }
+
+    .mobile-card-stats {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .action-btn {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+} 

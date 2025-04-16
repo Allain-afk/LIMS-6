@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /book%20king/
+
+# Prevent directory listing
+Options -Indexes
+
+# Handle front controller
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

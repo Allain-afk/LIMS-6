@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #FEF3E8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-container {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    position: relative;
+    background: #FEF3E8;
+    border-radius: 10px;
+    outline: 1px #B07154 solid;
+    outline-offset: -1px;
+    padding: 48px;
+    margin: 20px;
+}
+
+.settings-header {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.settings-header h1 {
+    color: #B07154;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #B07154;
+    margin: 40px 0;
+}
+
+.form-group {
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #B07154;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.20px;
+    margin-left: 4px;
+}
+
+.input-container {
+    width: 100%;
+    height: 100%;
+    padding: 12px 16px;
+    background: white;
+    border-radius: 12px;
+    outline: 1px #B07154 solid;
+    outline-offset: -0.50px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 16px;
+    color: #B07154;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.toggle-password:hover {
+    opacity: 1;
+}
+
+.input-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #727374;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.20px;
+    word-wrap: break-word;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.input-container input::placeholder {
+    color: #727374;
+    opacity: 1;
+}
+
+.button-group {
+    display: flex;
+    gap: 13px;
+    margin-top: 40px;
+}
+
+.cancel-btn, .confirm-btn {
+    flex: 1;
+    height: 54px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.40px;
+    cursor: pointer;
+    border: none;
+    padding: 0 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cancel-btn {
+    background: #F4DECB;
+    color: #B07154;
+    outline: 1px #B07154 solid;
+    outline-offset: -1px;
+}
+
+.confirm-btn {
+    background: #B07154;
+    color: white;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f8d7da;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.success-message {
+    color: #28a745;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #d4edda;
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .settings-container {
+        padding: 24px;
+        margin: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .cancel-btn, .confirm-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .settings-container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .settings-header h1 {
+        font-size: 18px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .button-group {
+        margin-top: 30px;
+    }
+
+    .input-container {
+        padding: 10px 14px;
+    }
+}
+
+.cancel-btn:hover {
+    background-color: #F4DECB;
+}
+
+/* Match the header styling from user-dashboard */
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+}

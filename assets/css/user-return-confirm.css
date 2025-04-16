@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1139px;
+    min-height: 683px;
+    background: white;
+    border: 1px solid #E8E8E8;
+    border-radius: 12px;
+    position: relative;
+    padding: 1.5rem;
+}
+
+.table-container {
+    width: 100%;
+    max-width: 1087px;
+    background: white;
+    border: 1px solid #E8E8E8;
+    border-radius: 12px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    overflow-x: auto;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: minmax(80px, 100px) minmax(150px, 1fr) minmax(100px, 200px) minmax(100px, 200px);
+    gap: 1rem;
+    padding: 0 1.5rem 1rem;
+    color: #B07154;
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: 500;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: minmax(80px, 100px) minmax(150px, 1fr) minmax(100px, 200px) minmax(100px, 200px);
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    color: #B07154;
+    font-size: clamp(14px, 2vw, 16px);
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.book-id,
+.book-name,
+.book-type,
+.book-language {
+    font-weight: 400;
+}
+
+/* Update summary card and related styles */
+.summary-card {
+    width: 100%;
+    max-width: 408px;
+    min-height: 150px;
+    background: white;
+    border: 1px solid #E8E8E8;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem auto;
+    position: relative;
+    display: flex;
+    gap: 3.5rem;
+}
+
+.summary-left {
+    padding-right: 1rem;
+    min-width: 80px;
+}
+
+.summary-right {
+    flex: 1;
+    padding-left: 1rem;
+}
+
+.summary-id {
+    color: #B07154;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.summary-count {
+    color: #B07154;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.summary-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.summary-label {
+    color: #B07154;
+    font-size: 1rem;
+    font-weight: 500;
+    min-width: 120px;
+}
+
+.summary-value {
+    color: #B07154;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.summary-divider {
+    width: 2px;
+    height: 80%;
+    background: #B07154;
+    position: absolute;
+    left: 105px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.close-button {
+    width: 100%;
+    max-width: 259px;
+    height: 54px;
+    background: #B07154;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: 700;
+    cursor: pointer;
+    margin: 1rem auto;
+    display: block;
+}
+
+/* Update media queries */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .table-container {
+        padding: 1rem;
+    }
+
+    .summary-card {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .summary-divider {
+        left: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .table-header,
+    .table-row {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .summary-card {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .summary-divider {
+        display: none;
+    }
+
+    .summary-left,
+    .summary-right {
+        align-items: center;
+        text-align: center;
+    }
+
+    .summary-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .summary-label {
+        min-width: auto;
+    }
+
+    .close-button {
+        height: 48px;
+    }
+}
